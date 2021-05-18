@@ -10,7 +10,24 @@ docker build -t de-exercise .
 docker run -v $(pwd)/data:/build/data de-exercise
 ```
 
-Running the docker image will first execute a test and afterwards create data required for the exercise in the passed in data folder.
+Running the docker image will first execute a test and afterwards create data required for the exercise in the passed in data folder:
+
+```
+data
+└── base
+    └── table1
+        ├── _SUCCESS
+        ├── part-00000-<RUN_HASH>-c000.snappy.parquet
+        ├── part-00001-<RUN_HASH>-c000.snappy.parquet
+        ├── part-00002-<RUN_HASH>-c000.snappy.parquet
+        ├── part-00003-<RUN_HASH>-c000.snappy.parquet
+        ├── part-00004-<RUN_HASH>-c000.snappy.parquet
+        ├── part-00005-<RUN_HASH>-c000.snappy.parquet
+        ├── part-00006-<RUN_HASH>-c000.snappy.parquet
+        ├── part-00007-<RUN_HASH>-c000.snappy.parquet
+        ├── part-00008-<RUN_HASH>-c000.snappy.parquet
+        └── part-00009-<RUN_HASH>-c000.snappy.parquet
+```
 
 If you want to run this in your local environment (e.g. for IDE support) you will have to install Python 3.6 with PySpark 2.4.3, which requires Java8. Afterwards, install the exercise dependencies by running
 
