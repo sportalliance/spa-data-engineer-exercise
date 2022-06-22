@@ -11,7 +11,7 @@ importlib-metadata==1.6.1  # via flake8, pluggy, pytest
 jmespath==0.10.0          # via boto3, botocore
 mccabe==0.6.1             # via flake8
 more-itertools==8.4.0     # via pytest
-numpy==1.19.0             # via pandas, pyarrow
+numpy==1.22.0             # via pandas, pyarrow
 packaging==20.4           # via pytest
 pandas==1.0.5             # via -r requirements-dev.in
 pathspec==0.8.0           # via black
