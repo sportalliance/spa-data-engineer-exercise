@@ -23,7 +23,7 @@ pyarrow==0.17.1           # via -r requirements-dev.in
 pycodestyle==2.6.0        # via flake8
 pyflakes==2.2.0           # via flake8
 pyparsing==2.4.7          # via packaging
-pyspark==2.4.3            # via -r requirements-dev.in
+pyspark==3.2.2            # via -r requirements-dev.in
 pytest==5.4.3             # via -r requirements-dev.in
 python-dateutil==2.8.1    # via botocore, pandas
 pytz==2020.1              # via pandas
